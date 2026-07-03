@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="description" content="Contact Janseva Shiksha Niketan — admissions office phone, email, address and campus hours.">
+ <title>Contact Us | Janseva Shiksha Niketan</title>
+ <link rel="icon" href="favicon.ico">
+ <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-bg">
+ <a href="#main-content" class="skip-link">Skip to main content</a>
+
+ <header>
+ <div class="nav-container">
+ <a href="index.html" class="brand-area">
+ <img src="school_logo.png" alt="Janseva Shiksha Niketan logo" class="school-logo">
+ <span class="school-name" data-en="Janseva Shiksha Niketan" data-hi="जनसेवा शिक्षा निकेतन">Janseva Shiksha Niketan</span>
+ </a>
+ <nav aria-label="Main navigation">
+ <ul>
+ <li><a href="index.html" data-en="Home" data-hi="होम">Home</a></li>
+ <li><a href="about.html" data-en="About Us" data-hi="हमारे बारे में">About Us</a></li>
+ <li><a href="contact.html" aria-current="page" data-en="Contact Us" data-hi="संपर्क करें">Contact Us</a></li>
+ <li>
+ <button id="lang-toggle-btn" class="lang-toggle-btn" aria-label="Switch language / भाषा बदलें">
+ <span class="globe-icon" aria-hidden="true">🌐</span>
+ <span id="lang-toggle-label">हिंदी</span>
+ </button>
+ </li>
+ <li>
+ <button id="dark-mode-toggle" aria-label="Toggle dark mode" class="theme-toggle-btn">
+ <span class="mode-icon" aria-hidden="true">🌙</span>
+ </button>
+ </li>
+ </ul>
+ </nav>
+ </div>
+ </header>
+
+ <main id="main-content">
+ <h1 data-en="Get in Touch" data-hi="संपर्क करें">Get in Touch</h1>
+ <p class="lead" data-en="Please use the details below to reach our campus offices. Our standard operating hours are Monday through Friday, 8:00 AM – 4:00 PM."
+    data-hi="कृपया हमारे कैंपस कार्यालयों से संपर्क करने के लिए नीचे दिए गए विवरण का उपयोग करें। हमारा कार्य समय सोमवार से शुक्रवार, सुबह 8:00 बजे से शाम 4:00 बजे तक है।">
+ Please use the details below to reach our campus offices. Our standard operating hours are Monday through Friday, 8:00 AM – 4:00 PM.
+ </p>
+
+ <div class="contact-grid">
+ <div class="contact-card">
+ <!-- Phone/email/address are pulled live from Google Sheets by contact-data.js -->
+ <h2 data-en="Admissions Office" data-hi="प्रवेश कार्यालय">Admissions Office</h2>
+ <p><span class="icon" aria-hidden="true">📞</span><strong data-en="Phone:" data-hi="फ़ोन:">Phone:</strong> <span id="contact-phone">Loading...</span></p>
+ <p><span class="icon" aria-hidden="true">✉️</span><strong data-en="Email:" data-hi="ईमेल:">Email:</strong> <span id="contact-email">Loading...</span></p>
+ <p><span class="icon" aria-hidden="true">📍</span><strong data-en="Address:" data-hi="पता:">Address:</strong> <span id="contact-address">Loading...</span></p>
+ </div>
+
+ <div class="contact-card">
+ <h2 data-en="Office Hours" data-hi="कार्यालय समय">Office Hours</h2>
+ <p data-en="Monday – Friday" data-hi="सोमवार – शुक्रवार">Monday – Friday</p>
+ <p data-en="8:00 AM – 4:00 PM" data-hi="सुबह 8:00 – शाम 4:00">8:00 AM – 4:00 PM</p>
+ <p data-en="Closed on public holidays" data-hi="सार्वजनिक अवकाश पर बंद">Closed on public holidays</p>
+ </div>
+ </div>
+ </main>
+
+ <footer>
+ <p data-en="&copy; 2026 Janseva Shiksha Niketan. All rights reserved." data-hi="&copy; 2026 जनसेवा शिक्षा निकेतन। सर्वाधिकार सुरक्षित।">&copy; 2026 Janseva Shiksha Niketan. All rights reserved.</p>
+ </footer>
+
+ <script src="translate.js"></script>
+ <script src="contact-data.js"></script>
+ <script src="script.js"></script>
+</body>
+</html>
