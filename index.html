@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Janseva Shiksha Niketan — quality education and a nurturing environment for our community's children. Notices, admissions and school information.">
+  <title>Janseva Shiksha Niketan | Home</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="page-bg">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="brand-area">
+        <img src="school_logo.png" alt="Janseva Shiksha Niketan logo" class="school-logo">
+        <span class="school-name" data-en="Janseva Shiksha Niketan" data-hi="जनसेवा शिक्षा निकेतन">Janseva Shiksha
+          Niketan</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" aria-current="page" data-en="Home" data-hi="होम">Home</a></li>
+          <li><a href="about.html" data-en="About Us" data-hi="हमारे बारे में">About Us</a></li>
+          <li><a href="contact.html" data-en="Contact Us" data-hi="संपर्क करें">Contact Us</a></li>
+          <li>
+            <button id="lang-toggle-btn" class="lang-toggle-btn" aria-label="Switch language / भाषा बदलें">
+              <span class="globe-icon" aria-hidden="true">🌐</span>
+              <span id="lang-toggle-label">हिंदी</span>
+            </button>
+          </li>
+          <li>
+            <button id="dark-mode-toggle" aria-label="Toggle dark mode" class="theme-toggle-btn">
+              <span class="mode-icon" aria-hidden="true">🌙</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <h1 data-en="Welcome to Our School" data-hi="हमारे विद्यालय में आपका स्वागत है">Welcome to Our School</h1>
+    <p class="lead" data-en="Providing quality education and building bright futures for our community's children."
+      data-hi="गुणवत्तापूर्ण शिक्षा प्रदान करना और हमारे समुदाय के बच्चों के लिए उज्ज्वल भविष्य का निर्माण करना।">
+      Providing quality education and building bright futures for our community's children.
+    </p>
+
+    <div class="content-columns">
+      <div class="notice-board-col">
+        <section id="notice-board" aria-labelledby="notice-board-heading">
+          <h2 id="notice-board-heading" data-en="School Notice Board" data-hi="विद्यालय सूचना पट्ट">School Notice Board
+          </h2>
+          <div id="ticker-container">
+            <div class="ticker-text" id="live-ticker">Loading school notices...</div>
+          </div>
+          <button type="button" id="expand-notices-btn" class="action-btn" onclick="toggleNotices()"
+            data-en-expand="Expand Notices" data-hi-expand="सूचनाएं देखें" data-en-collapse="Collapse Notices"
+            data-hi-collapse="सूचनाएं छुपाएं">
+            Expand Notices
+          </button>
+          <div id="full-notices">
+            <h3 data-en="All Active Notices" data-hi="सभी सक्रिय सूचनाएं">All Active Notices</h3>
+            <ul id="live-list">
+              <li>Loading list...</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <div class="principal-col">
+        <!-- Replace principal.jpg with the actual photo file -->
+        <img src="principal.jpeg" alt="School Principal" class="principal-photo">
+        <div class="principal-message">
+          <h3 data-en="From Principal:" data-hi="प्राचार्य की ओर से:">From Principal:</h3>
+          <p data-en="&quot;Today's struggle, tomorrow's success.&quot;"
+            data-hi="&quot;आज का संघर्ष, कल की सफलता।&quot;">"Today's struggle, tomorrow's success."</p>
+          <p class="signature" data-en="&mdash; XYZ" data-hi="&mdash; XYZ">&mdash; XYZ</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p data-en="&copy; 2026 Janseva Shiksha Niketan. All rights reserved."
+      data-hi="&copy; 2026 जनसेवा शिक्षा निकेतन। सर्वाधिकार सुरक्षित।">&copy; 2026 Janseva Shiksha Niketan. All rights
+      reserved.</p>
+  </footer>
+
+  <script src="translate.js"></script>
+  <script src="home-notices.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
