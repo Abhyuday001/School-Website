@@ -303,9 +303,9 @@ button.action-btn:hover, .notice-btn:hover, .expand-btn:hover, #expand-notices-b
   color: var(--text-primary);
   margin-top: 0.5rem;
 }
-@media (max-width: 650px) {
-  .content-columns { flex-direction: column; }
-}
+/* Column stacking for this section is now handled entirely by the
+   768px breakpoint below, which also sets align-items:stretch so the
+   columns can't shrink-wrap to their content width. */
 
 /* --- Notice Board --- */
 #notice-board {
@@ -329,6 +329,9 @@ button.action-btn:hover, .notice-btn:hover, .expand-btn:hover, #expand-notices-b
   overflow: hidden;
   margin-bottom: 1.5rem;
   white-space: nowrap;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
   transition: background 0.4s ease, border-color 0.4s ease;
 }
 [data-theme="dark"] #ticker-container {
@@ -483,11 +486,19 @@ footer a:hover {
   /* Home page: stack notice board above principal card sooner */
   .content-columns {
     flex-direction: column;
+    align-items: stretch; /* without this, columns shrink-wrap to their
+      content width — and since the ticker text is white-space:nowrap,
+      it can balloon the whole page out sideways once notices load */
     gap: 1.5rem;
     margin: 1.5rem 0;
   }
+  .notice-board-col,
+  .principal-col {
+    width: 100%;
+  }
   #notice-board {
     padding: 1.25rem;
+    max-width: 100%;
   }
   .ticker-text {
     font-size: 0.9rem;
